@@ -1,0 +1,19 @@
+<div style="text-align: center;">
+<h1>
+    Hola {{title}}
+</h1>
+<div *ngFor='let dashb of dash'>
+    <img [src]='dashb.picture.medium'>
+        <h2>Usuario :{{ dashb.gender }} {{ dashb.name.title }} {{ dashb.name.first }} {{ dashb.name.last }}</h2>
+        <h3>Email :{{ dashb.email }}</h3>
+        <p>Telefono :{{ dashb.phone }}</p>
+        <h3>Direccion :{{ dashb.location.street.number }} {{ dashb.location.street.name }}</h3>
+        <h2>Ciudad :{{ dashb.location.city }}</h2>
+        <h4>Codigo Postal : {{ dashb.location.postcode }}</h4>
+        <h5>Registro : Dia : {{dashb.registered.date}}     Año : {{dashb.registered.age}}</h5>
+
+</div>
+
+
+
+</div>
